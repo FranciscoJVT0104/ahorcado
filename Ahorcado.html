@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Juego del ahorcado</title>
+  <link rel="stylesheet" href="estilo-ahoracado.css">
+</head>
+<body>
+  <div class="main-container">
+    <h1 class="titulo">Juego del ahorcado</h1>
+    <h1 id="msg-final"></h1>
+    <h3 id="acierto"></h3>
+    <div class="flex-row no-wrap">
+      <h2 class="palabra" id="palabra"></h2>
+      <picture>
+        <img src="img/ahorcado_6.png" alt="" id="image6">
+        <img src="img/ahorcado_5.png" alt="" id="image5">
+        <img src="img/ahorcado_4.png" alt="" id="image4">
+        <img src="img/ahorcado_3.png" alt="" id="image3">
+        <img src="img/ahorcado_2.png" alt="" id="image2">
+        <img src="img/ahorcado_1.png" alt="" id="image1">
+        <img src="img/ahorcado_0.png" alt="" id="image0">
+      </picture>
+    </div>
+    <div class="flex-row" id="turnos">
+      <div class="col">
+        <h3>Intentos restantes: <span id="intentos">6</span></h3>
+      </div>
+      <div class="col2">
+        <button onclick="inicio()" id="reset" class="btn1">Elegir otra palabra</button>
+        <button onclick="pista()" id="pista" class="btn2">Dame una pista!</button>
+        <span id="hueco-pista"></span>
+      </div>
+    </div>
+    <div class="flex-row teclado">
+      <div class="fila">
+        <button onclick="intento('Q')" class="letra" id="Q">Q</button>
+        <button onclick="intento('W')" class="letra" id="W">W</button>
+        <button onclick="intento('E')" class="letra" id="E">E</button>
+        <button onclick="intento('R')" class="letra" id="R">R</button>
+        <button onclick="intento('T')" class="letra" id="T">T</button>
+        <button onclick="intento('Y')" class="letra" id="Y">Y</button>
+        <button onclick="intento('U')" class="letra" id="U">U</button>
+        <button onclick="intento('I')" class="letra" id="I">I</button>
+        <button onclick="intento('O')" class="letra" id="O">O</button>
+        <button onclick="intento('P')" class="letra" id="P">P</button>
+      </div>
+      <div class="fila">
+        <button onclick="intento('A')" class="letra" id="A">A</button>
+        <button onclick="intento('S')" class="letra" id="S">S</button>
+        <button onclick="intento('D')" class="letra" id="D">D</button>
+        <button onclick="intento('F')" class="letra" id="F">F</button>
+        <button onclick="intento('G')" class="letra" id="G">G</button>
+        <button onclick="intento('H')" class="letra" id="H">H</button>
+        <button onclick="intento('J')" class="letra" id="J">J</button>
+        <button onclick="intento('K')" class="letra" id="K">K</button>
+        <button onclick="intento('L')" class="letra" id="L">L</button>
+        <button onclick="intento('Ñ')" class="letra" id="Ñ">Ñ</button>
+      </div>
+      <div class="fila">
+        <button onclick="intento('Z')" class="letra" id="Z">Z</button>
+        <button onclick="intento('X')" class="letra" id="X">X</button>
+        <button onclick="intento('C')" class="letra" id="C">C</button>
+        <button onclick="intento('V')" class="letra" id="V">V</button>
+        <button onclick="intento('B')" class="letra" id="B">B</button>
+        <button onclick="intento('N')" class="letra" id="N">N</button>
+        <button onclick="intento('M')" class="letra" id="M">M</button>
+      </div>
+    </div>     
+  </div>
+  <script src="ahorcado.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+}
+
+.main-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+h1.titulo {
+  margin: 50px auto 80px auto;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+h1#msg-final {
+  text-align: center;
+  color: crimson;
+  transition: all .5s ease;
+  transform: scale(0);
+  min-height: 50px;
+  margin-bottom: 0;
+}
+
+.zoom-in {
+  transform: scale(1) !important;
+}
+
+#acierto {
+  text-align: center;
+  min-height: 24px;
+  transform: scale(0);
+}
+
+.acierto {
+  animation: zoomInOut 1s ease;
+}
+
+.rojo {
+  color: red;
+}
+
+.verde {
+  color: green;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+h2.palabra {
+  margin: 0 auto 25px auto;
+  text-align: center;
+  color: royalblue;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.no-wrap {
+  flex-wrap: nowrap !important;
+}
+
+.col {
+  width: 30%;
+}
+
+.col2 {
+  width: 70%;
+}
+
+#turnos h3 {
+  margin: auto;
+}
+
+h3 span {
+  color: orangered;
+}
+
+.letra {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50%;
+  margin: 5px;
+  border: none;
+  background-color: rgb(0, 155, 207);
+  cursor: pointer;
+}
+.letra:hover{
+  background-color: lightblue;
+}
+
+.letra:disabled {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: default;
+}
+
+picture {
+  position: relative;
+}
+
+picture img {
+  position: absolute;
+  top: -203px;
+  left: -205px;
+  height: 225px;
+}
+
+#image5,
+#image4,
+#image3,
+#image2,
+#image1,
+#image0 {
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.fade-in {
+  opacity: 1 !important;
+}
+
+.encuadre {
+  border: 2px dashed crimson;
+  padding: 3px 2px 2px 6px;
+}
+
+.teclado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.teclado .fila {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.teclado .letra {
+  margin: 0 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.btn1 {
+  top: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  font-weight: 500;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #000000;
+  border: 2px solid #000000;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: rgb(0, 212, 46);
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+.btn1:hover {
+  background-color: rgb(72, 255, 0);
+}
+
+.btn2 {
+  top: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  font-weight: 500;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #000000;
+  border: 2px solid #000000;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: rgb(0, 212, 46);
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+.btn2:hover {
+  background-color: rgb(72, 255, 0);
+}
